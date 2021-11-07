@@ -10,6 +10,7 @@ Techno utilisées jusque là :
 - JS
 - NodeJS
 - Express
+- EJS
 
 
 ## Initialisation du projet 
