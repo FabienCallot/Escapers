@@ -139,7 +139,7 @@ a {
   }
 }
 
-@media screen and (max-width: 1276px) {
+@media screen and (max-width: 1370px) {
   body {
     font-size: 13px;
   }
@@ -161,7 +161,7 @@ a {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   body {
     font-size: 12px;
     margin: 1.5em;
