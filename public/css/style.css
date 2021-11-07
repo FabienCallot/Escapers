@@ -10,12 +10,10 @@ body {
   margin: 0.5em 2em;
   height: 100vh;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 .header__nav {
   max-height: 500px;
   display: flex;
@@ -26,7 +24,6 @@ a {
   align-items: center;
   margin-bottom: 3em;
 }
-
 .nav__enseigne {
   display: flex;
   justify-content: flex-start;
@@ -34,17 +31,18 @@ a {
   flex-wrap: nowrap;
   align-items: center;
 }
-
+.nav__enseigne a {
+  display: flex;
+  font-size: 2em;
+  font-weight: 700;
+}
 .nav__enseigne img {
   height: 20%;
   width: 20%;
 }
-
 .nav__enseigne h2 {
-  font-size: 2em;
-  font-weight: 700;
+  align-self: center;
 }
-
 .nav__button {
   background-color: inherit;
   font-size: 2em;
@@ -55,17 +53,14 @@ a {
   padding: 10px 0;
   transition: 0.4s;
 }
-
 .nav__button a {
   padding: 1em 2em;
 }
-
 .nav__button:hover {
   background-color: rgb(255, 255, 255, 0.8);
   color: #070c20;
   transition: 0.4s;
 }
-
 .header h1 {
   font-size: 3em;
   margin-bottom: 1.5em;
@@ -74,19 +69,16 @@ a {
   margin-right: auto;
   text-align: center;
 }
-
 .header p {
   font-size: 1.5em;
   text-align: center;
   line-height: 1.5em;
 }
-
 .main {
   display: flex;
   justify-content: space-evenly;
   margin-top: 4em;
 }
-
 .main__article {
   width: 25%;
   border: solid 2px #fff;
@@ -94,7 +86,6 @@ a {
   margin: 1em;
   text-align: center;
 }
-
 .main__article a {
   display: block;
   transition: 0.4s;
@@ -103,25 +94,24 @@ a {
   padding: 1em;
   border-bottom: solid 2px #fff;
 }
-
 .main__article a:hover {
   background-color: rgba(255, 255, 255, 0.8);
   color: #070c20;
   transition: 0.4s;
 }
-
 .main__article img {
   margin: 1em 1em 0rem 1em;
   height: 6em;
   width: 6em;
 }
-
 .main__article p {
   padding: 2em;
   font-size: 1.1em;
   text-align: center;
 }
-
+/* ********************************************************************************************************* */
+/* ********************************************************************************************************* */
+/* ********************************************************************************************************* */
 @media screen and (min-width: 1550px) {
   body {
     margin: 2em 2em 2em 0em;
