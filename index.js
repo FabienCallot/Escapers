@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const PORT = 3010;
-const rooms = require('./my modules/rooms');
+const rooms = require('./my modules/rooms.json');
 //je définis le template motor
 app.set('view engine', 'ejs');
 app.set('views' , './views');
@@ -22,6 +22,7 @@ app.get('/:room' , (req , res) => {
     for(const room of rooms) {
         if(room.title.toLowerCase() === req.params.room.toLowerCase()){
             currentRoom = room;
+            console.log(currentRoom);
         };
     };
     if(currentRoom) {
@@ -40,3 +41,5 @@ app.get('*' , (req , res) => {
 app.listen(PORT , () => {
     console.log('server available on http://localhost:3010');
 });
+
+
