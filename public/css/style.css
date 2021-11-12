@@ -80,6 +80,7 @@ a {
   justify-content: space-evenly;
   padding: 4em 2em 4em;
   color: #001122;
+  /* background-color: #FCAF3C; */
 }
 .main__article {
   width: 25%;
@@ -131,12 +132,9 @@ a {
 @media screen and (max-width: 1475px) {
   body {
     font-size: 14px;
-    /* background: #FCAF3C; */
-    background-size: cover;
   }
   .header {
     padding-bottom: 1em;
-    /* background-color: #001122; */
   }
   .header h1 {
     width: auto;
@@ -149,16 +147,20 @@ a {
     margin: 0;
   }
   .main {
-    padding-top: 6em;
+    padding-top: 9em;
   }
 }
 
 @media screen and (max-width: 1370px) {
   body {
     font-size: 13px;    
-    
+    background-size: 100%;
+  }
+  .header {
+    padding-bottom: 10em;
   }
   .main {
+    padding-top: 0;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -167,25 +169,37 @@ a {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1260px) {
+  body {
+    background-size: 120%;
+  }
+  
+}
+
+@media screen and (max-width: 1030px) {
   body {
     font-size: 12px;
-    background-size: 350%;
+    background-size: 120%;
   }
-  .header {
-    padding-bottom: 3em;
-  }
-  .main {
-    background-color: #FCAF3C;
-    padding-top: 1em;
+ 
+}
+
+@media screen and (max-width: 980px) {
+  body {
+    font-size: 12px;
+    background-size: 145%;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
   body {
     font-size: 12px;
+    background-size: 140%;
   }
-  .header h1 {
+  .header {
+    padding-bottom: 5em;
+  }
+  .header p {
     display: none;
   }
   .header p {
@@ -204,4 +218,71 @@ a {
     display: block;
     width: auto;
   }
+}
+
+@media screen and (max-width: 730px) {
+  body {
+    background-size: 175%;
+  }
+  .header {
+    padding-bottom: 8em;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body {
+    background-size: 205%;
+  }
+  .header {
+    padding-bottom: 6em;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  body {
+    background-size: 250%;
+  }
+  .nav__enseigne a {
+    justify-content: center;
+  }
+  .nav__button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  body {
+    background-size: 295%;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  body {
+    background-size: 300%;
+  }
+  .header {
+    padding-bottom: 6em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-size: 350%;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  body {
+    background-size: 400%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  body {
+    background-size: 440%;
+  }
+  .header {
+    padding-bottom: 2.5em;
+  }
+
 }

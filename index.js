@@ -2,42 +2,15 @@
 const express = require('express');
 const app = express();
 const PORT = 3010;
-const rooms = require('./my modules/rooms.json');
+const router = require('./app/router');
 //je définis le template motor
 app.set('view engine', 'ejs');
-app.set('views' , './views');
+app.set('views' , __dirname + '/app/views');
 // je définis le dossier public comme static et accessible pour le client
-app.use(express.static('public'));
+app.use(express.static( __dirname + '/public'));
+// j'utlise le router pour mes routes
+app.use(router);
 
-//route principale 
-app.get('/' , (req , res) => {
-    res.render('index' , {
-        title : 'Escapers Lille',
-        name : 'Escapers, time to escape.'
-    })
-});
-// route dynamique pour mes rooms
-app.get('/:room' , (req , res) => {
-    let currentRoom = null;
-    for(const room of rooms) {
-        if(room.title.toLowerCase() === req.params.room.toLowerCase()){
-            currentRoom = room;
-            console.log(currentRoom);
-        };
-    };
-    if(currentRoom) {
-        res.render(`${currentRoom.title}` , {
-        title : `${currentRoom.title}`,
-        name : `${currentRoom.name}`
-    });
-    } else {
-        res.status(404).send("404 - page not found");
-    }; 
-});
-//404 pour toute les autres page non trouvées
-app.get('*' , (req , res) => {
-    res.status(404).send('404 - page not found');
-});
 app.listen(PORT , () => {
     console.log('server available on http://localhost:3010');
 });
