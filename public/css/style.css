@@ -195,7 +195,13 @@ a {
     display: block;
     width: auto;
   }
-};
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    padding-top: 2.5em;
+  }
+}
 
 
 

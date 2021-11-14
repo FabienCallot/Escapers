@@ -5,7 +5,8 @@ const rooms = require('./my modules/rooms.json');
 router.get('/' , (req , res) => {
     res.render('index' , {
         title : 'Escapers Lille',
-        name : 'Escapers, time to escape.'
+        name : 'Escapers, time to escape.',
+        intro : `test`
     })
 });
 // route dynamique pour mes rooms
