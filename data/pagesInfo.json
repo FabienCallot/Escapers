@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Escapers, time to Escape.",
+        "name": "homePage",
+        "headerInfo": "Fouille, communication et resolution d'énigmes vous permettrons d'avancer dans un décors et une imersion total. Votre équipe est votre force ! Ou votre faiblesse... Venez relever le challenge et essayer de vous échapper en moins d'une heure !"
+    },
+    {
+        "title": "Braquage",
+        "name": "Le braquage à la Lilloise",
+        "headerInfo": "L'art, ca rapporte !"
+    },
+    {
+        "title": "Magot",
+        "name": "Le Magot de Mémé",
+        "headerInfo": "Elle cachait bien son jeu... Et son buttin !"
+    },
+    {
+        "title": "Loup",
+        "name": "Le grand méchant loup",
+        "headerInfo": "Panique à bord, nous somme enfermé dans une cabane !"
+    }
+]

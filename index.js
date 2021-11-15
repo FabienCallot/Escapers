@@ -1,4 +1,3 @@
-// j'importe express et je le lance, + PORT du serveur
 const express = require('express');
 const app = express();
 const PORT = 3010;
