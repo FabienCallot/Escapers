@@ -20,6 +20,7 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "node-dev": "^7.1.0",
     "pg": "^8.7.1"
   }
 }
