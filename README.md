@@ -12,16 +12,5 @@ Techno utilisées jusque là :
 - Express
 - EJS
 
-
-## Initialisation du projet 
-
-- lancer la commande ``` npm init -y ``` & ``` npm install ``` 
-pour installer les modules.
-- c'est tout ! 
-  
-
-  ### Enjoy  
-
-
   Fab Call- :wave:
 
